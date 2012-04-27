@@ -33,6 +33,9 @@
  *             IPC operation. (default 1e-3)
  */
 
+#ifndef _GNU_SOURCE
+#define _GNU_SOURCE 1 // request cpu_set_t
+#endif
 #include <cerrno>
 #include <grp.h>
 #include <iostream>
